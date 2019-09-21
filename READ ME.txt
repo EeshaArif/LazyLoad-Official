@@ -1,0 +1,19 @@
+-------------------LazyLoad------------------------
+
+1. To run this program some pip extensions have to be installed
+2. To install these extensions:
+  i) open command prompt and type
+  ii) pip install flask
+  iii) pip install flask-admin
+  iv) pip install flask-login
+  v) pip intsall sqlalchemy
+  vi) pip install flask-wtforms
+3. After installing these, run the code as usual.(run.py)
+4.admin:
+  admin id = 090078601
+  password = niggachu
+
+
+_____________________!!!!!THANK YOU!!!!!_____________________
+
+--------------------------POCHINKI--------------------------

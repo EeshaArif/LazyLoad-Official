@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+    <h2>Welcome to LazyLoad! If you’re lazy, we will bear your load for you! </h2>
+    <br>
+    <legend>Here are some of our Bright and High Achieving Students along with their Achievements</legend>
+    <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+                <p class="mr-2">Stood First in NERC</p>
+            </div>
+            <h2><a class="article-title" href="{{ url_for('abdulrafey') }}">Abdul Rafey</a></h2>
+            <p class="article-content">Roll Number: 16607</p>
+            <p class="article-content">Section: B</p>
+          </div>
+    </article>
+    <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+                <p class="mr-2">Scored 99% in Punjab Board Exams</p>
+            </div>
+            <h2><a class="article-title" href="{{ url_for('hammad') }}">Hammad Ahmed</a></h2>
+            <p class="article-content">Roll Number: 242863</p>
+            <p class="article-content">Section: A</p>
+          </div>
+     </article>
+    <br>
+    <br>
+    <br>
+
+{% endblock content %}

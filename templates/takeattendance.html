@@ -1,0 +1,35 @@
+{% extends 'teacher.html' %}
+{% block content %}
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Present/Absent</th>
+
+    </tr>
+  </thead>
+
+
+    <form action="/displayattendance" method="post">
+{% for i in range(0,num): %}
+
+    <tr>
+        <td>{{ student_name_list[i] }}</td>
+
+        <td><input type="checkbox"  value="present" name={{ "att{}".format(i) }} ></td>
+
+    </tr>
+
+{% endfor %}
+
+
+
+  </tbody>
+</table>
+    <input type="submit" value="Submit">
+    </form>
+{% endblock content %}
+
+
+</html>

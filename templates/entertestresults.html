@@ -1,0 +1,20 @@
+{% extends 'teacher.html' %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Choose Test Series</legend>
+                <ul class="list-group">
+
+                <a class="nav-item nav-link" href="{{ url_for('falltestseries') }}">Fall Test Series</a>
+
+                <a class="nav-item nav-link" href="{{ url_for('springtestseries') }}">Spring Test Series</a>
+                <a class="nav-item nav-link" href="{{ url_for('finaltestseries') }}">Final Test Series</a>
+               </ul>
+
+
+        </form>
+    </div>
+
+{% endblock content %}

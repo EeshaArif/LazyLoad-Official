@@ -1,0 +1,25 @@
+{% extends 'account.html' %}
+          {% block content %}
+              <table class="table table-striped">
+              <thead>
+              <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">present/absent</th>
+
+              </tr>
+                   {% for i in range(0,num): %}
+
+                <tr>
+                 <td>{{ student_name_list[i] }}</td>
+
+
+               <td>{{ attendance[i] }}</td>
+
+                   {% endfor %}
+                  </tr>
+               </thead>
+               </tbody>
+              </table>
+
+
+          {% endblock %}

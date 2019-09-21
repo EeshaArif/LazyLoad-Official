@@ -1,0 +1,179 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Lazy Advisor</legend>
+                <legend class="border-bottom mb-4">Please provide information in the format of HHHH hours(eg: 5PM = 1700)</legend>
+
+
+
+                <div class="form-group">
+                    {{ form.roll_no.label(class='form-control-label') }}
+                    {% if form.roll_no.errors %}
+                        {{ form.roll_no(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.roll_no.error %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.roll_no(class='form-control form-control-lg') }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.wakeuptime.label(class='form-control-label') }}
+                    {% if form.wakeuptime.errors %}
+                        {{ form.wakeuptime(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.wakeuptime.error %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.wakeuptime(class='form-control form-control-lg') }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.sleeptime.label(class='form-control-label') }}
+                    {% if form.sleeptime.errors %}
+                        {{ form.sleeptime(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.sleeptime.error %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.sleeptime(class='form-control form-control-lg') }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.breakfasttime.label(class='form-control-label') }}
+                    {% if form.breakfasttime.errors %}
+                        {{ form.breakfasttime(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.breakfasttime.error %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.breakfasttime(class='form-control form-control-lg') }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.lunchtime.label(class='form-control-label') }}
+                    {% if form.lunchtime.errors %}
+                        {{ form.lunchtime(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.lunchtime.error %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.lunchtime(class='form-control form-control-lg') }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.dinnertime.label(class='form-control-label') }}
+                    {% if form.dinnertime.errors %}
+                        {{ form.dinnertime(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.dinnertime.error %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.dinnertime(class='form-control form-control-lg') }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.schoolgoing.label(class='form-control-label') }}
+                    {% if form.schoolgoing.errors %}
+                        {{ form.schoolgoing(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.schoolgoing.error %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.schoolgoing(class='form-control form-control-lg') }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.schoolreturning.label(class='form-control-label') }}
+                    {% if form.schoolreturning.errors %}
+                        {{ form.schoolreturning(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.schoolreturning.error %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.schoolreturning(class='form-control form-control-lg') }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.academygoing.label(class='form-control-label') }}
+                    {% if form.academygoing.errors %}
+                        {{ form.academygoing(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.academygoing.error %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.academygoing(class='form-control form-control-lg') }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.academyreturning.label(class='form-control-label') }}
+                    {% if form.academyreturning.errors %}
+                        {{ form.academyreturning(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.academyreturning.error %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.academyreturning(class='form-control form-control-lg') }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.falltest.label(class='form-control-label') }}
+                    {% if form.falltest.errors %}
+                        {{ form.falltest(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.falltest.error %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.falltest(class='form-control form-control-lg') }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.springtest.label(class='form-control-label') }}
+                    {% if form.springtest.errors %}
+                        {{ form.springtest(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.springtest.error %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.springtest(class='form-control form-control-lg') }}
+                    {% endif %}
+                </div>
+
+
+
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class='btn btn-outline-info') }}
+            </div>
+
+        </form>
+    </div>
+
+{% endblock content %}

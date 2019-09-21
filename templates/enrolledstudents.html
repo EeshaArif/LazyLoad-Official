@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Enrolled Students</th>
+  </thead>
+
+    </tr>
+        {% for i in range(0,num): %}
+
+     <tr>
+        <td>{{ student_name_list[i] }}</td>
+
+    {% endfor %}
+
+    </tr>
+
+  </tbody>
+</table>
+{% endblock content %}
+
