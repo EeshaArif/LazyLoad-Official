@@ -1,7 +1,7 @@
 # LazyLoad-Official
 ### Welcome to LazyLoad! If you’re lazy, we will bear your load for you!
 #### Introduction:
-LazyLoad is a campus management system built on Flask (python's webframework).
+LazyLoad is a campus management system built on [Flask](https://flask.palletsprojects.com/en/1.1.x/) (python's webframework).
 #### Installation:
 To run this program, some external packages need to be installed.
 
